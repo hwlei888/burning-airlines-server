@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-09-13
+  origin: MyText
+  destination: MyText
+  flight_number: 1
+
+two:
+  date: 2022-09-13
+  origin: MyText
+  destination: MyText
+  flight_number: 1
