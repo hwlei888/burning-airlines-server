@@ -97,14 +97,14 @@ f3 = Flight.create!(
     flight_number: 65
 )
 
-f3 = Flight.create!(
+f4 = Flight.create!(
     date: "2022-07-10",
     origin: 'ADE',
     destination: 'MEL',
     flight_number: 9
 )
 
-f3 = Flight.create!(
+f5 = Flight.create!(
     date: "2022-09-12",
     origin: 'SYD',
     destination: 'MEL',
@@ -112,6 +112,15 @@ f3 = Flight.create!(
 )
 
 puts("I have created #{Flight.count} flights.")
+
+####FLIGHTS ASSOCIATIONS  AIRPLANES --< > FLIGHTS######
+
+a1.flights << f1 << f2
+a2.flights << f3 << f4
+a3.flights << f5
+
+puts ('I have connected FLIGHTS with AIRPLANES.')
+puts"The AIRPLANE '#{a2.name}' contains the flights: #{a2.flights.pluck(:flight_number).join(', ')}."
 
 ##### RESERVATION ######
 
@@ -148,3 +157,23 @@ r5 = Reservation.create!(
 )
 
 puts ("I have created #{Reservation.count} reservations")
+
+######RESERVATION ASSOCIATIONS #######
+
+puts('Making associations between user --< >---reservations')
+
+u2.reservations << r1 << r2
+u3.reservations << r3
+u4.reservations << r4
+u5.reservations << r5
+puts"The USER '#{u2.name}' contains the reservations: #{u2.reservations.pluck(:row).join(', ')}."
+
+puts('Making associations between reservation --< >---flights')
+
+f1.reservations << r1 
+f2.reservations << r2
+f3.reservations << r3 << r4 
+f4.reservations << r5
+
+puts"The FLIGHT '#{f3.flight_number}' contains the reservations in rows: #{f3.reservations.pluck(:row).join(', ')}."
+

@@ -1,0 +1,36 @@
+class AirplanesController < ApplicationController
+  def new
+    @airplane = Airplane.new
+  end
+
+  def create
+    @airplane = Airplane.create airplane_params
+  end
+
+  def index
+    @airplanes = Airplane.all
+    respond_to do |format|
+      format.html #shows page as html
+      format.json {render json: @airplanes} #shows json
+    end
+  end
+
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  private 
+
+  def airplane_params
+    params.require(:airplane).permit(:name, :row, :column)
+  
+  end
+
+
+
+end
