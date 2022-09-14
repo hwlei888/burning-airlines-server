@@ -23,7 +23,11 @@ class FlightsController < ApplicationController
   end
 
   def show
-    @flight = Flight.find params[:id]
+    @flight = Flight.find_by params[:flight_number]
+    respond_to do |format|
+      format.html #shows page as html
+      format.json {render json: @flight, include: [:users, :airplane]} 
+    end
     
   end
 

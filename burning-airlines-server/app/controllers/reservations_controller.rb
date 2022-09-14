@@ -1,6 +1,12 @@
 class ReservationsController < ApplicationController
   skip_before_action :verify_authenticity_token, raise: false
   
+
+  def details #trialling a custom route to get complete informaiton
+
+  
+  end
+
   def new
     @reservation = Reservation.new
   end
@@ -26,13 +32,14 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       format.html #shows page as html
-      format.json {render json: @reservations} #shows json
+      format.json {render json: @reservations, include: [:user, :flight]} #shows json
     end
 
   end
 
   def show
     @reservation = Reservation.find params[:id]
+
   end
 
   def edit
