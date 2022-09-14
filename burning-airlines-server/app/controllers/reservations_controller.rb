@@ -1,6 +1,12 @@
 class ReservationsController < ApplicationController
   skip_before_action :verify_authenticity_token, raise: false
   
+
+  def details #trialling a custom route to get complete informaiton
+
+  
+  end
+
   def new
     @reservation = Reservation.new
   end
@@ -33,6 +39,7 @@ class ReservationsController < ApplicationController
 
   def show
     @reservation = Reservation.find params[:id]
+    
   end
 
   def edit
