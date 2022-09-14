@@ -1,4 +1,6 @@
 class ReservationsController < ApplicationController
+  skip_before_action :verify_authenticity_token, raise: false
+  
   def new
     @reservation = Reservation.new
   end
