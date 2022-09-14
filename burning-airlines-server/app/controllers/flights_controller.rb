@@ -1,4 +1,7 @@
 class FlightsController < ApplicationController
+
+  before_action :check_if_logged_in, except: [:index, :show]
+
   def new
     @flight = Flight.new
   end
@@ -23,7 +26,8 @@ class FlightsController < ApplicationController
   end
 
   def show
-    @flight = Flight.find_by params[:flight_number]
+    # @flight = Flight.find_by params[:flight_number]
+    @flight = Flight.find_by flight_number: params[:id]
     respond_to do |format|
       format.html #shows page as html
       format.json {render json: @flight, include: [:users, :airplane]} 

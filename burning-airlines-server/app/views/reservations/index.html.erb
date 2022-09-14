@@ -1,13 +1,23 @@
 
+<div class = "beCenter">
 <h2>All Reservations</h2>
+</div>
 
-<%= link_to 'New Reservations', new_reservation_path %>
+<div class = "beCenter">
+<% if @current_user.present? %>
+    <%= link_to 'New Reservations', new_reservation_path %>
+<% end %>
+</div>
 
 <% @reservations.each do |r|  %> 
+<div class = "beCenter">
     <p><%= r.row %> <%= r.column %>
+</div>
+
+<div class = "beCenter">
     <p>Booked by <%= r.user.name %> 
     <p>For flight <%= r.flight.origin%> >> <%= r.flight.destination %> on <%=r.flight.date %> flying by <%= r.flight.airplane.name%>
-
+</div>
 
 
 <% end %>

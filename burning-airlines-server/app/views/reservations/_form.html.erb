@@ -1,5 +1,5 @@
 
-
+<div class = "beCenter">
 <div class="reservations" id="new_reservation_form">
     <% if @reservation != nil %>
         <% if @reservation.errors.any? %>
@@ -13,6 +13,10 @@
 
         <% end  %>
     <% end   %>
+</div>
+
+
+<div class = "beCenter">
     <%= form_with model: @reservation, local: true do |f| %>
 
         
@@ -22,8 +26,6 @@
         <%= f.text_field :column, placeholder:'Enter column' %>
         <br>
         
-       
-        </div>
         <p>User</p>
         <p>Flight</p>
         <p>Plane</p>

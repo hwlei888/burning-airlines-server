@@ -1,5 +1,5 @@
 
-
+<div class = "beCenter">
 <div class="flights" id="new_flight_form">
     <% if @flight != nil %>
         <% if @flight.errors.any? %>
@@ -13,6 +13,9 @@
 
         <% end  %>
     <% end   %>
+</div>
+
+<div class = "beCenter">
     <%= form_with model: @flight, local: true do |f| %>
 
         
@@ -26,15 +29,16 @@
         <br>
         
         <%= f.label :flight_number, 'FlightNumber'  %>
+        <br>
         <%= f.number_field :flight_number %>
         <br>
         
        
-        </div>
         <p>User</p>
         <p>Flight</p>
         <p>Plane</p>
 
         <%= f.submit class:"button"%>
     <% end %>
+</div>
 </div>

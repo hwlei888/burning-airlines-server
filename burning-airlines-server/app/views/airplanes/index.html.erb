@@ -1,8 +1,16 @@
-<h2>All Airplanes</h2>
-<%= link_to 'Add Plane', new_airplane_path %>
 
+<div class = "beCenter">
+<h2>All Airplanes</h2>
+</div>
+
+<div class = "beCenter">
+<% if @current_user.present? && @current_user.admin %>
+    <%= link_to 'Add Plane', new_airplane_path %>
+<% end %>
+</div>
 
 <% @airplanes.each do |plane|  %> 
+<div class = "beCenter">
     <p><%= plane.name %>: <%= plane.row %> <%= plane.column %> 
-
+</div>
 <% end %>

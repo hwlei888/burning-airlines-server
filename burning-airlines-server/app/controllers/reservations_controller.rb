@@ -1,5 +1,8 @@
 class ReservationsController < ApplicationController
+
   skip_before_action :verify_authenticity_token, raise: false
+
+  before_action :check_if_logged_in, except: [:index, :show]
   
 
   def details #trialling a custom route to get complete informaiton

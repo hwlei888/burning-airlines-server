@@ -1,11 +1,29 @@
+
+<div class = "beCenter">
 <h2>All flights</h2>
+</div>
+
+<div class = "beCenter">
+<% if @current_user.present? && @current_user.admin %>
+    <%= link_to 'Add New Flight', new_flight_path %>
+<% end %>
+</div>
+
+<div class = "beCenter">
+<p> Date - Origin  - Destination - Plane - Flight#
+</div>
 
 
-<%= link_to 'Add New Flight', new_flight_path %>
-
-<p> Date - Origin  - Destination - Flight#
 <% @flights.each do |flight|  %> 
-    <p><%= flight.date %> <%= flight.origin %> <%= flight.destination %> <%= flight.flight_number %>
+<div class = "beCenter">
+    <p><%= flight.date %> &nbsp;&nbsp;&nbsp;&nbsp;
+     <%= flight.origin %> &nbsp;&nbsp;&nbsp;&nbsp;
+      <%= flight.destination %> &nbsp;&nbsp;&nbsp;&nbsp;
+      <%= flight.airplane.name %> &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a href="<%= "http://localhost:3001/#/flights/"+ flight.flight_number.to_s %>"><%= flight.flight_number %></a>
+</div>
 
 <% end %>
+
 

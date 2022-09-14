@@ -1,0 +1,56 @@
+
+<div class = "beCenter">
+<h2>Sign up</h2>
+</div>
+
+<div class = "beCenter">
+<% if @user.errors.any? %>
+    <strong>Please correct the following errors: </strong>
+    <ul>
+        <% @user.errors.full_messages.each do |e| %>
+            <li><%= e %></li>
+        <% end %>
+    </ul>
+
+<% end %>
+</div>
+
+<div class = "beCenter">
+<%= form_with model: @user, local: true do |f| %>
+
+    <div class= "user_form_block">
+    <%= f.label :name %>
+    <br>
+    <%= f.text_field :name %>
+    </div>
+
+
+    <div class= "user_form_block">
+    <%= f.label :email %>
+    <br>
+    <%= f.text_field :email %>
+    </div>
+
+
+    <div class= "user_form_block">
+    <%= f.label :password %>
+    <br>
+    <%= f.password_field :password %>
+    </div>
+
+
+    <div class= "user_form_block">
+    <%= f.label :password_confirmation %>
+    <br>
+    <%= f.password_field :password_confirmation %>
+    </div>
+
+
+    <div class= "user_form_block">
+    <%= f.submit %>
+    </div>
+
+
+
+<% end %>
+</div>

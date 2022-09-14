@@ -42,6 +42,8 @@ User.destroy_all
 u1 = User.create!(
 
     name: 'Lei',
+    email: 'lei@gmail.com',
+    password: 'chicken',
     admin: true
 
 )
@@ -49,12 +51,16 @@ u1 = User.create!(
 u2 = User.create!(
 
     name: 'Brendan',
+    email: 'brendan@gmail.com',
+    password: 'chicken',
     admin: false
 )
 
 u3 = User.create!(
 
     name: 'Luke',
+    email: 'luke@gmail.com',
+    password: 'chicken',
     admin: false
 
 )
@@ -62,6 +68,8 @@ u3 = User.create!(
 u4 = User.create!(
 
     name: 'Kris',
+    email: 'kris@gmail.com',
+    password: 'chicken',
     admin: false
 
 )
@@ -69,6 +77,8 @@ u4 = User.create!(
 u5 = User.create!(
 
     name: 'Shay',
+    email: 'shay@gmail.com',
+    password: 'chicken',
     admin: false
 
 )

@@ -1,0 +1,35 @@
+
+<div class = "beCenter">
+    <h2>Login</h2>
+</div>
+
+<div class = "beCenter">
+    <% if flash[:error] %>
+
+        <br>
+        <strong>
+            <%= flash[:error] %>
+        </strong>
+        <br><br>
+
+    <% end %>
+</div>
+
+<div class = "beCenter">
+    <%= form_with url:login_path, local: true do |f| %>
+
+        <%= f.label :email, 'Email Address' %>
+        <br>
+        <%= f.text_field :email %>
+        <br><br>
+
+        <%= f.label :password %>
+        <br>
+        <%= f.password_field :password %>
+        <br><br>
+
+        <%= f.submit 'Login' %>
+
+    <% end %>
+</div>
+

@@ -1,5 +1,17 @@
-<h2>If you are seeing this, you better be admin (that means Lei only!)</h2>
 
-<div>
-    <%= render partial: '/airplanes/form' %>
+<div class = "beCenter">
+<% if @current_user.present? && @current_user.admin %>
+    <h2>If you are seeing this, you better be admin (that means Lei only!)</h2>
 </div>
+
+   <div class = "beCenter">
+        <%= render partial: '/airplanes/form' %>
+    </div>
+
+<% else %>
+<div class = "beCenter">
+    <h2>Welcome</h2>
+</div>
+<% end %>
+
+
