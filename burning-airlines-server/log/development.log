@@ -35152,3 +35152,1753 @@ Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mReservation Load (1.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4808705032369488810)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to AddPasswordDigestToUsers (20220914132946)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" text[0m
+  ↳ db/migrate/20220914132946_add_password_digest_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220914132946"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to AddEmailToUsers (20220914133123)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "email" text[0m
+  ↳ db/migrate/20220914133123_add_email_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220914133123"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to ChangeFlightNumberToBeStringInFlights (20220914185035)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.6ms)[0m  [1m[35mALTER TABLE "flights" ALTER COLUMN "flight_number" TYPE character varying[0m
+  ↳ db/migrate/20220914185035_change_flight_number_to_be_string_in_flights.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220914185035"]]
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4808705032369488810)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (0.4ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.2ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Create (0.3ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "747"], ["row", "32"], ["column", "F"], ["created_at", "2022-09-14 18:57:04.263951"], ["updated_at", "2022-09-14 18:57:04.263951"], ["total_seats", 192]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "737"], ["row", "28"], ["column", "E"], ["created_at", "2022-09-14 18:57:04.265855"], ["updated_at", "2022-09-14 18:57:04.265855"], ["total_seats", 140]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "700"], ["row", "15"], ["column", "D"], ["created_at", "2022-09-14 18:57:04.267088"], ["updated_at", "2022-09-14 18:57:04.267088"], ["total_seats", 60]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 101]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 102]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 103]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 104]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 105]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Lei"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lei"], ["created_at", "2022-09-14 18:57:04.485688"], ["updated_at", "2022-09-14 18:57:04.485688"], ["admin", true], ["password_digest", "$2a$12$4Yo/IKXEppTCBj0fOPuqseHO./XP0JOUDvtl71KrV8jneX7QSgbmK"], ["email", "lei@gmail.com"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Brendan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brendan@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brendan"], ["created_at", "2022-09-14 18:57:04.685691"], ["updated_at", "2022-09-14 18:57:04.685691"], ["admin", false], ["password_digest", "$2a$12$Wg/DLJrzZkBR6Q17iWA.4.SWCus9z0oN0nVdW7MnwhKMePtKqhVXm"], ["email", "brendan@gmail.com"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Luke"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luke"], ["created_at", "2022-09-14 18:57:04.885689"], ["updated_at", "2022-09-14 18:57:04.885689"], ["admin", false], ["password_digest", "$2a$12$yY52dPxB3vuAJLZrkXDr1eZW3IOv6yCXG9SSkQCJ0ijNjZUiBBHvm"], ["email", "luke@gmail.com"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kris@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kris"], ["created_at", "2022-09-14 18:57:05.086099"], ["updated_at", "2022-09-14 18:57:05.086099"], ["admin", false], ["password_digest", "$2a$12$uGMFsAzaxwNT3qeebQko7u9jkuTZZAxTJ0ATPZhxTw1XEE0y9p1.i"], ["email", "kris@gmail.com"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Shay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shay@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shay"], ["created_at", "2022-09-14 18:57:05.286722"], ["updated_at", "2022-09-14 18:57:05.286722"], ["admin", false], ["password_digest", "$2a$12$8HEtE.WpoYagQUeB0dzCQ.vyjbe9PTOSEZoFlyS9IddTAKp27jbei"], ["email", "shay@gmail.com"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 88]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-08"], ["origin", "SYD"], ["destination", "ADE"], ["flight_number", "154"], ["created_at", "2022-09-14 18:57:05.303796"], ["updated_at", "2022-09-14 18:57:05.303796"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-09"], ["origin", "LAX"], ["destination", "SYD"], ["flight_number", "96"], ["created_at", "2022-09-14 18:57:05.306120"], ["updated_at", "2022-09-14 18:57:05.306120"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-10-11"], ["origin", "CBR"], ["destination", "MEL"], ["flight_number", "65"], ["created_at", "2022-09-14 18:57:05.307562"], ["updated_at", "2022-09-14 18:57:05.307562"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-07-10"], ["origin", "ADE"], ["destination", "MEL"], ["flight_number", "9"], ["created_at", "2022-09-14 18:57:05.308888"], ["updated_at", "2022-09-14 18:57:05.308888"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:120
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-12"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "15"], ["created_at", "2022-09-14 18:57:05.310313"], ["updated_at", "2022-09-14 18:57:05.310313"]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:120
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-09"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "222"], ["created_at", "2022-09-14 18:57:05.311672"], ["updated_at", "2022-09-14 18:57:05.311672"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2023-09-01"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "1"], ["created_at", "2022-09-14 18:57:05.313573"], ["updated_at", "2022-09-14 18:57:05.313573"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.3ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.318266"], ["airplane_id", 75], ["id", 90]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.320735"], ["airplane_id", 75], ["id", 91]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.322093"], ["airplane_id", 76], ["id", 92]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.323227"], ["airplane_id", 76], ["id", 93]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.324544"], ["airplane_id", 77], ["id", 94]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "flights"."flight_number" FROM "flights" WHERE "flights"."airplane_id" = $1[0m  [["airplane_id", 76]]
+  ↳ db/seeds.rb:150
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "12"], ["created_at", "2022-09-14 18:57:05.340647"], ["updated_at", "2022-09-14 18:57:05.340647"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "D"], ["column", "18"], ["created_at", "2022-09-14 18:57:05.341990"], ["updated_at", "2022-09-14 18:57:05.341990"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "B"], ["column", "7"], ["created_at", "2022-09-14 18:57:05.344412"], ["updated_at", "2022-09-14 18:57:05.344412"]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:174
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "11"], ["created_at", "2022-09-14 18:57:05.345650"], ["updated_at", "2022-09-14 18:57:05.345650"]]
+  ↳ db/seeds.rb:174
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:174
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:180
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "E"], ["column", "25"], ["created_at", "2022-09-14 18:57:05.346817"], ["updated_at", "2022-09-14 18:57:05.346817"]]
+  ↳ db/seeds.rb:180
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:186
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.349598"], ["user_id", 107], ["id", 71]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.351493"], ["user_id", 107], ["id", 72]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.352707"], ["user_id", 108], ["id", 73]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.353874"], ["user_id", 109], ["id", 74]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.355034"], ["user_id", 110], ["id", 75]]
+  ↳ db/seeds.rb:195
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 107]]
+  ↳ db/seeds.rb:196
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:200
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.357377"], ["flight_id", 90], ["id", 71]]
+  ↳ db/seeds.rb:200
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:200
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:201
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.358861"], ["flight_id", 91], ["id", 72]]
+  ↳ db/seeds.rb:201
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:201
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.360016"], ["flight_id", 92], ["id", 73]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.361090"], ["flight_id", 92], ["id", 74]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 18:57:05.362715"], ["flight_id", 93], ["id", 75]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 92]]
+  ↳ db/seeds.rb:205
+Started GET "/" for 127.0.0.1 at 2022-09-15 04:58:56 +1000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/newtrick/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#app as HTML
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 148ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-09-15 04:59:01 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 04:59:09 +1000
+Processing by DashboardController#app as HTML
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 04:59:10 +1000
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  Rendered flights/index.html.erb within layouts/application (32.1ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 7.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    19:     <p><%= flight.date %> &nbsp;&nbsp;&nbsp;&nbsp;
+    20:      <%= flight.origin %> &nbsp;&nbsp;&nbsp;&nbsp;
+    21:       <%= flight.destination %> &nbsp;&nbsp;&nbsp;&nbsp;
+    22:       <%= flight.airplane.name %> &nbsp;&nbsp;&nbsp;&nbsp;
+    23: 
+    24:         <a href="<%= "http://localhost:3001/#/flights/"+ flight.flight_number.to_s %>"><%= flight.flight_number %></a>
+    25: </div>
+  
+app/views/flights/index.html.erb:22:in `block in _app_views_flights_index_html_erb___3148089101664041843_16620'
+app/views/flights/index.html.erb:17:in `_app_views_flights_index_html_erb___3148089101664041843_16620'
+Started GET "/login" for 127.0.0.1 at 2022-09-15 04:59:25 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-09-15 05:00:43 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j2rpwWli+TeOFx80Au5YshNgGQVu7W2afwJBChB4ynAKPSKM3v8Ag7+ksFp4uU1neXJJQCtVd7dBBxJwHkFoKw==", "email"=>"lei@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 222ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 05:00:44 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.8ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 05:00:54 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  Rendered flights/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    19:     <p><%= flight.date %> &nbsp;&nbsp;&nbsp;&nbsp;
+    20:      <%= flight.origin %> &nbsp;&nbsp;&nbsp;&nbsp;
+    21:       <%= flight.destination %> &nbsp;&nbsp;&nbsp;&nbsp;
+    22:       <%= flight.airplane.name %> &nbsp;&nbsp;&nbsp;&nbsp;
+    23: 
+    24:         <a href="<%= "http://localhost:3001/#/flights/"+ flight.flight_number.to_s %>"><%= flight.flight_number %></a>
+    25: </div>
+  
+app/views/flights/index.html.erb:22:in `block in _app_views_flights_index_html_erb___3148089101664041843_17780'
+app/views/flights/index.html.erb:17:in `_app_views_flights_index_html_erb___3148089101664041843_17780'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:01:14 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.4ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 77ms (Views: 70.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2022-09-15 05:01:17 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 107], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 107], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 108], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 110], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:19
+  Rendered reservations/index.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 81ms (Views: 69.0ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 05:01:25 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  Rendered flights/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    19:     <p><%= flight.date %> &nbsp;&nbsp;&nbsp;&nbsp;
+    20:      <%= flight.origin %> &nbsp;&nbsp;&nbsp;&nbsp;
+    21:       <%= flight.destination %> &nbsp;&nbsp;&nbsp;&nbsp;
+    22:       <%= flight.airplane.name %> &nbsp;&nbsp;&nbsp;&nbsp;
+    23: 
+    24:         <a href="<%= "http://localhost:3001/#/flights/"+ flight.flight_number.to_s %>"><%= flight.flight_number %></a>
+    25: </div>
+  
+app/views/flights/index.html.erb:22:in `block in _app_views_flights_index_html_erb___3148089101664041843_18520'
+app/views/flights/index.html.erb:17:in `_app_views_flights_index_html_erb___3148089101664041843_18520'
+Started PUT "/__web_console/repl_sessions/4afe6eb14f3f7ed15f4873979831a6a5" for 127.0.0.1 at 2022-09-15 05:01:35 +1000
+Started PUT "/__web_console/repl_sessions/4afe6eb14f3f7ed15f4873979831a6a5" for 127.0.0.1 at 2022-09-15 05:01:36 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.2ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Create (0.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "747"], ["row", "32"], ["column", "F"], ["created_at", "2022-09-14 19:03:28.315740"], ["updated_at", "2022-09-14 19:03:28.315740"], ["total_seats", 192]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "737"], ["row", "28"], ["column", "E"], ["created_at", "2022-09-14 19:03:28.317533"], ["updated_at", "2022-09-14 19:03:28.317533"], ["total_seats", 140]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "700"], ["row", "15"], ["column", "D"], ["created_at", "2022-09-14 19:03:28.318723"], ["updated_at", "2022-09-14 19:03:28.318723"], ["total_seats", 60]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 106]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 107]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 108]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 109]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 110]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Lei"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lei"], ["created_at", "2022-09-14 19:03:28.532982"], ["updated_at", "2022-09-14 19:03:28.532982"], ["admin", true], ["password_digest", "$2a$12$KXmGav.49fPHm.0qMuogj.bWqbYezRPdcpVytOY6a80Jga5LZbZdq"], ["email", "lei@gmail.com"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Brendan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brendan@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brendan"], ["created_at", "2022-09-14 19:03:28.732540"], ["updated_at", "2022-09-14 19:03:28.732540"], ["admin", false], ["password_digest", "$2a$12$JhO9AUFytiEUQyWJ7LccvOSpPU461U0Fx1dGqn0bxcAKYnAKCTGmu"], ["email", "brendan@gmail.com"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Luke"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luke"], ["created_at", "2022-09-14 19:03:28.931561"], ["updated_at", "2022-09-14 19:03:28.931561"], ["admin", false], ["password_digest", "$2a$12$iaVWMIIolA2t2HdKeuwyXuQuv96LF00SO20d6CMyq1qTIXUYsFUo6"], ["email", "luke@gmail.com"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kris@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kris"], ["created_at", "2022-09-14 19:03:29.129889"], ["updated_at", "2022-09-14 19:03:29.129889"], ["admin", false], ["password_digest", "$2a$12$X3BDY9N0iCxXikj9XSNfDO9.L3wKjCiVKjReMYI6zK4aUxhDAuy9q"], ["email", "kris@gmail.com"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Shay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shay@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shay"], ["created_at", "2022-09-14 19:03:29.331387"], ["updated_at", "2022-09-14 19:03:29.331387"], ["admin", false], ["password_digest", "$2a$12$nNYp0yXELVImUUx/0lU6ou.UGENIgbSmizeaM2WEloL7hoBJZTrEK"], ["email", "shay@gmail.com"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 95]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 96]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-08"], ["origin", "SYD"], ["destination", "ADE"], ["flight_number", "154"], ["created_at", "2022-09-14 19:03:29.351392"], ["updated_at", "2022-09-14 19:03:29.351392"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-09"], ["origin", "LAX"], ["destination", "SYD"], ["flight_number", "96"], ["created_at", "2022-09-14 19:03:29.353195"], ["updated_at", "2022-09-14 19:03:29.353195"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-10-11"], ["origin", "CBR"], ["destination", "MEL"], ["flight_number", "65"], ["created_at", "2022-09-14 19:03:29.354435"], ["updated_at", "2022-09-14 19:03:29.354435"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-07-10"], ["origin", "ADE"], ["destination", "MEL"], ["flight_number", "9"], ["created_at", "2022-09-14 19:03:29.355603"], ["updated_at", "2022-09-14 19:03:29.355603"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:120
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-12"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "15"], ["created_at", "2022-09-14 19:03:29.356697"], ["updated_at", "2022-09-14 19:03:29.356697"]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:120
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-09"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "222"], ["created_at", "2022-09-14 19:03:29.357792"], ["updated_at", "2022-09-14 19:03:29.357792"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2023-09-01"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "1"], ["created_at", "2022-09-14 19:03:29.358917"], ["updated_at", "2022-09-14 19:03:29.358917"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.2ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.362967"], ["airplane_id", 78], ["id", 97]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.364714"], ["airplane_id", 78], ["id", 98]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.365822"], ["airplane_id", 78], ["id", 102]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.367011"], ["airplane_id", 79], ["id", 99]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.368163"], ["airplane_id", 79], ["id", 100]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.369436"], ["airplane_id", 79], ["id", 103]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.370794"], ["airplane_id", 80], ["id", 101]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "flights"."flight_number" FROM "flights" WHERE "flights"."airplane_id" = $1[0m  [["airplane_id", 79]]
+  ↳ db/seeds.rb:150
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "12"], ["created_at", "2022-09-14 19:03:29.385029"], ["updated_at", "2022-09-14 19:03:29.385029"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "D"], ["column", "18"], ["created_at", "2022-09-14 19:03:29.386376"], ["updated_at", "2022-09-14 19:03:29.386376"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "B"], ["column", "7"], ["created_at", "2022-09-14 19:03:29.387524"], ["updated_at", "2022-09-14 19:03:29.387524"]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:174
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "11"], ["created_at", "2022-09-14 19:03:29.388614"], ["updated_at", "2022-09-14 19:03:29.388614"]]
+  ↳ db/seeds.rb:174
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:174
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:180
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "E"], ["column", "25"], ["created_at", "2022-09-14 19:03:29.389688"], ["updated_at", "2022-09-14 19:03:29.389688"]]
+  ↳ db/seeds.rb:180
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:186
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.392053"], ["user_id", 112], ["id", 76]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.393622"], ["user_id", 112], ["id", 77]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.394866"], ["user_id", 113], ["id", 78]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.396058"], ["user_id", 114], ["id", 79]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.397313"], ["user_id", 115], ["id", 80]]
+  ↳ db/seeds.rb:195
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 112]]
+  ↳ db/seeds.rb:196
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:200
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.399803"], ["flight_id", 97], ["id", 76]]
+  ↳ db/seeds.rb:200
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:200
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:201
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.401458"], ["flight_id", 98], ["id", 77]]
+  ↳ db/seeds.rb:201
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.402812"], ["flight_id", 99], ["id", 78]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.404067"], ["flight_id", 99], ["id", 79]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-14 19:03:29.405333"], ["flight_id", 100], ["id", 80]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 99]]
+  ↳ db/seeds.rb:205
+Started GET "/" for 127.0.0.1 at 2022-09-15 05:03:40 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/newtrick/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 127ms (Views: 117.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-09-15 05:03:41 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-09-15 05:03:53 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ff7UkftU8BxI181Qlx5dZ1wdmWf54e1XhKX3kB6wEHGQqR/cTMkJqHlkYj7tSUiyNg/JIrxZ93q6oKTqEImyKg==", "email"=>"lei@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 210ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-09-15 05:03:53 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-09-15 05:04:02 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"niW5v41s+dDZrYziKWp0FQyHea796qj7BruBFopAYSEbcnLyOvEAZOgeI4xTPWHAZpUp67hSstY4vtJshHnDeg==", "email"=>"lei@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 202ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 05:04:03 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.5ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 05:04:09 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.3ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 05:04:10 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 44ms (Views: 31.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:04:18 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:05:54 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:06:13 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:06:14 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:06:28 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:06:30 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 05:06:34 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.4ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:06:35 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.5ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 05:07:21 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 05:15:35 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:15:41 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:16:46 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:16:55 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:17:23 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:18:51 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:18:58 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:19:11 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:20:05 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:21:44 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:22:21 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:23:48 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:25:03 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:25:29 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:28:25 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:32:14 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:32:16 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:33:28 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:33:29 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/reservations/" for 127.0.0.1 at 2022-09-15 05:33:32 +1000
+Processing by ReservationsController#create as HTML
+  Parameters: {"row"=>nil, "column"=>nil, "user_id"=>105, "flight_id"=>89, "reservation"=>{"row"=>nil, "column"=>nil, "user_id"=>105, "flight_id"=>89}}
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-09-15 05:33:32 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 05:35:17 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:35:19 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:37:26 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:41:52 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:43:09 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:44:44 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:45:11 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:45:19 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:46:01 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:48:08 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:48:21 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:49:00 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:52:15 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:53:58 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 05:54:29 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:02:02 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:03:06 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:04:05 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:06:21 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:07:18 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:59:26 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 06:59:57 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.4ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:09:02 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:09:34 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:13:11 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:13:53 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:22:20 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:24:00 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:26:46 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 07:27:23 +1000
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 101]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.0ms)
+
+

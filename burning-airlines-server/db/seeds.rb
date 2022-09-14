@@ -93,43 +93,57 @@ f1 = Flight.create!(
     date: "2022-8-8",
     origin: 'SYD',
     destination: 'ADE',
-    flight_number: 154
+    flight_number: "154"
 )
 
 f2 = Flight.create!(
     date: "2022-8-9",
     origin: 'LAX',
     destination: 'SYD',
-    flight_number: 96
+    flight_number: "96"
 )
 
 f3 = Flight.create!(
     date: "2022-10-11",
     origin: 'CBR',
     destination: 'MEL',
-    flight_number: 65
+    flight_number: "65"
 )
 
 f4 = Flight.create!(
     date: "2022-07-10",
     origin: 'ADE',
     destination: 'MEL',
-    flight_number: 9
+    flight_number: "9"
 )
 
 f5 = Flight.create!(
     date: "2022-09-12",
     origin: 'SYD',
     destination: 'MEL',
-    flight_number: 15
+    flight_number: "15"
+)
+
+f6 = Flight.create!(
+    date: "2022-09-09",
+    origin: 'SYD',
+    destination: 'MEL',
+    flight_number: "222"
+)
+
+f7 = Flight.create!(
+    date: "2023-09-01",
+    origin: 'SYD',
+    destination: 'MEL',
+    flight_number: "1"
 )
 
 puts("I have created #{Flight.count} flights.")
 
 ####FLIGHTS ASSOCIATIONS  AIRPLANES --< > FLIGHTS######
 
-a1.flights << f1 << f2
-a2.flights << f3 << f4
+a1.flights << f1 << f2 << f6 
+a2.flights << f3 << f4 << f7
 a3.flights << f5
 
 puts ('I have connected FLIGHTS with AIRPLANES.')

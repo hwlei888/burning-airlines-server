@@ -11,6 +11,13 @@
 
 <% @airplanes.each do |plane|  %> 
 <div class = "beCenter">
-    <p><%= plane.name %>: <%= plane.row %> <%= plane.column %> 
+
+    <p>Name:<%= plane.name %></p>
+    <ul>
+        <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+        <li>Total number of seats: <%= plane.total_seats %></li>
+    
+    </ul>
+    
 </div>
 <% end %>
