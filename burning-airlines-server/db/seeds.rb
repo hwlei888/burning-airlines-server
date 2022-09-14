@@ -6,7 +6,8 @@ a1 = Airplane.create!(
 
     name: '747',
     row: '32', #this represents the LAST row
-    column: 'F'#this represents the LAST column (ie. A-F)
+    column: 'F',#this represents the LAST column (ie. A-F)
+    total_seats: 192
     
 
 )
@@ -15,7 +16,9 @@ a2 = Airplane.create!(
 
     name: '737',
     row: '28', #this represents the LAST row
-    column: 'E'#this represents the LAST column (ie. A-F)
+    column: 'E',#this represents the LAST column (ie. A-F).
+    total_seats: 140
+
     
 
 )
@@ -24,8 +27,8 @@ a3 = Airplane.create!(
 
     name: '700',
     row: '15', #this represents the LAST row
-    column: 'D'#this represents the LAST column (ie. A-F)
-    
+    column: 'D',#this represents the LAST column (ie. A-F)
+    total_seats: 60
 
 )
 
