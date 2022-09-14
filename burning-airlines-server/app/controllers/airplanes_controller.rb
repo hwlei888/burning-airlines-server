@@ -5,6 +5,8 @@ class AirplanesController < ApplicationController
 
   def create
     @airplane = Airplane.create airplane_params
+
+    redirect_to airplanes_path
   end
 
   def index

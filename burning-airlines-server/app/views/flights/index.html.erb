@@ -1,4 +1,8 @@
 <h2>All flights</h2>
+
+
+<%= link_to 'Add New Flight', new_flight_path %>
+
 <p> Date - Origin  - Destination - Flight#
 <% @flights.each do |flight|  %> 
     <p><%= flight.date %> <%= flight.origin %> <%= flight.destination %> <%= flight.flight_number %>

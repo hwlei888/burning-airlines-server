@@ -1,0 +1,40 @@
+
+
+<div class="flights" id="new_flight_form">
+    <% if @flight != nil %>
+        <% if @flight.errors.any? %>
+            <strong>Please corrrect the following:</strong>
+            <ul>
+                <% @flight.errors.full_messages.each do |e| %>
+                    <li><%= e %></li>
+
+                <% end %>
+            </ul>
+
+        <% end  %>
+    <% end   %>
+    <%= form_with model: @flight, local: true do |f| %>
+
+        
+        <%= f.date_field :date %>
+        <br>
+        
+        <%= f.text_field :origin, placeholder:'Enter Origin' %>
+        <br>
+        
+        <%= f.text_field :destination, placeholder:'Enter Destination' %>
+        <br>
+        
+        <%= f.label :flight_number, 'FlightNumber'  %>
+        <%= f.number_field :flight_number %>
+        <br>
+        
+       
+        </div>
+        <p>User</p>
+        <p>Flight</p>
+        <p>Plane</p>
+
+        <%= f.submit class:"button"%>
+    <% end %>
+</div>
