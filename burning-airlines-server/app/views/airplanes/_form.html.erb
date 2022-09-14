@@ -1,0 +1,30 @@
+
+<div class="form" >
+    <% if @airplane != nil %>
+        <% if @airplane.errors.any? %>
+            <strong>Please corrrect the following:</strong>
+            <ul>
+                <% @airplane.errors.full_messages.each do |e| %>
+                    <li><%= e %></li>
+
+                <% end %>
+            </ul>
+        <% end  %>
+     <% end  %>
+
+    <%= form_with model: @airplane, local: true do |f| %>
+
+        
+        <%= f.text_field :name, placeholder:'What is the name of this plane?' %>
+        <br>
+        
+        <%= f.text_field :row, placeholder:'How many ROWS (#) are there?' %>
+        <br>
+        <%= f.text_field :column, placeholder:'How many COLUMNS (A-E) are there?' %>
+        
+        </div>
+        
+
+        <%= f.submit class:"button"%>
+    <% end %>
+</div>

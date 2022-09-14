@@ -1,0 +1,33 @@
+
+
+<div class="reservations" id="new_reservation_form">
+    <% if @reservation != nil %>
+        <% if @reservation.errors.any? %>
+            <strong>Please corrrect the following:</strong>
+            <ul>
+                <% @reservation.errors.full_messages.each do |e| %>
+                    <li><%= e %></li>
+
+                <% end %>
+            </ul>
+
+        <% end  %>
+    <% end   %>
+    <%= form_with model: @reservation, local: true do |f| %>
+
+        
+        <%= f.text_field :row, placeholder:'Enter row' %>
+        <br>
+        
+        <%= f.text_field :column, placeholder:'Enter column' %>
+        <br>
+        
+       
+        </div>
+        <p>User</p>
+        <p>Flight</p>
+        <p>Plane</p>
+
+        <%= f.submit class:"button"%>
+    <% end %>
+</div>

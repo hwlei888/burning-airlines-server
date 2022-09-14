@@ -4,9 +4,9 @@ class FlightsController < ApplicationController
   end
 
   def create
-    flight = Flight.create content: params[:content]
-        if flight.persisted? 
-            render json: flight #send the created flight object as JSON response
+    @flight = Flight.create flight_params
+        if @flight.persisted? 
+            render json: @flight #send the created flight object as JSON response
         else
             render json: { error: 'Could not create flight' }, status: 422 #'Unprocessable Entity'
         end #end if
@@ -32,6 +32,15 @@ class FlightsController < ApplicationController
 
   def update
   end
+
+  private
+
+  def flight_params
+    params.require(:flight).permit(:date, :origin, :destination, :flight_number, :airplane_id)
+
+  end 
+
+
 end
 
 

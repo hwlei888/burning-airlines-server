@@ -9,6 +9,19 @@ class ReservationsController < ApplicationController
 
   def index
     @reservations = Reservation.all
+
+    # @reservations.each do |r| 
+    #   {
+    #     row: r.row,
+    #     column: r.column,
+    #     user: r.user.name,
+    #     origin: r.flight.origin,
+    #     destination: r.flight.destination,
+    #     date: r.flight.date,
+    #     airplane: r.flight.airplane.name
+    #   }
+    # end
+
     respond_to do |format|
       format.html #shows page as html
       format.json {render json: @reservations} #shows json
