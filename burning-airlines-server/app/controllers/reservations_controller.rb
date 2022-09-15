@@ -16,6 +16,7 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.create reservation_params
+    
   end
 
   def index
