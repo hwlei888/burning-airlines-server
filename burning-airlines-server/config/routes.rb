@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
-  get '/find' => 'user#find'
+  get '/find/:name' => 'users#find'
 
 
 end

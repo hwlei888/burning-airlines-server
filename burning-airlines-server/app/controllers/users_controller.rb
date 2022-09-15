@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_action :check_if_logged_in, except: [:new, :create, :index, :show]
+  before_action :check_if_logged_in, except: [:new, :create, :index, :show, :find]
 
   def new
     @user = User.new
@@ -23,7 +23,11 @@ class UsersController < ApplicationController
   end
 
   def find #a custom route 
-
+    @user = User.find_by name: params[:name]
+    respond_to do |format|
+      format.html #shows page as html
+      format.json {render json: @user}
+    end
   end
 
   def show
