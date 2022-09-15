@@ -37,7 +37,10 @@
       &nbsp;&nbsp;&nbsp;&nbsp;
       <%= link_to 'All Airplanes', airplanes_path %>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <%= link_to 'All Reservations', reservations_path %>
+
+      <% if @current_user.present? && @current_user.admin %>
+        <%= link_to 'All Reservations', reservations_path %>
+      <% end %>
     
     </div>
     </header>

@@ -1,7 +1,7 @@
 
-<div class = "beCenter">
 <% if @current_user.present? && @current_user.admin %>
-    <h2>If you are seeing this, you better be admin (that means Lei only!)</h2>
+<div class = "beCenter">
+    <h2>Welcome back to BURNING Airlines, Admin</h2>
 </div>
 
    <div class = "beCenter">
@@ -10,8 +10,14 @@
 
 <% else %>
 <div class = "beCenter">
-    <h2>Welcome</h2>
+    <h2>Welcome to BURNING Airlines</h2>
 </div>
+
+
+<div class = "beCenter">
+    <%= image_tag "concorde.jpg" ,alt: "burning airlines", class: "airline_image" %>
+</div>
+
 <% end %>
 
 
