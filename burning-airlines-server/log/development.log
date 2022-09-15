@@ -43603,3 +43603,1659 @@ Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 59]]
   ↳ db/seeds.rb:205
 >>>>>>> 48f07b48101b8c39c33382bd29db13b7264c89bb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4808705032369488810)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4808705032369488810)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (4.0ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (1.0ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Create (0.4ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "747"], ["row", "32"], ["column", "F"], ["created_at", "2022-09-15 02:52:11.606987"], ["updated_at", "2022-09-15 02:52:11.606987"], ["total_seats", 192]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "737"], ["row", "28"], ["column", "E"], ["created_at", "2022-09-15 02:52:11.608396"], ["updated_at", "2022-09-15 02:52:11.608396"], ["total_seats", 140]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAirplane Create (0.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "700"], ["row", "15"], ["column", "D"], ["created_at", "2022-09-15 02:52:11.609422"], ["updated_at", "2022-09-15 02:52:11.609422"], ["total_seats", 60]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:40
+  [1m[35m (9.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 54]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 55]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Lei"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lei"], ["created_at", "2022-09-15 02:52:11.877955"], ["updated_at", "2022-09-15 02:52:11.877955"], ["admin", true], ["password_digest", "$2a$12$vMIplfd98NNC8FKcqYu.8uxXYhkwij9uxXPowpYbFHKUkHayfi3xG"], ["email", "lei@gmail.com"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (4.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Brendan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brendan@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brendan"], ["created_at", "2022-09-15 02:52:12.126587"], ["updated_at", "2022-09-15 02:52:12.126587"], ["admin", false], ["password_digest", "$2a$12$.3EmL2ncQZRBKq4LdQwyYek13yFqRKL.vNInV4mzd5IIy1E1u8ilS"], ["email", "brendan@gmail.com"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Luke"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luke"], ["created_at", "2022-09-15 02:52:12.371278"], ["updated_at", "2022-09-15 02:52:12.371278"], ["admin", false], ["password_digest", "$2a$12$/UkAuYiA6CsueNtXDfEPAufHtUfEc5mM7ZRzn.wwxns649tXvRU.6"], ["email", "luke@gmail.com"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kris@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kris"], ["created_at", "2022-09-15 02:52:12.614956"], ["updated_at", "2022-09-15 02:52:12.614956"], ["admin", false], ["password_digest", "$2a$12$w/IGXmgVnhpz5PaBGrvAH.dFcWAa.CwPExXJ0jNvG7Mi5kFGjIAjO"], ["email", "kris@gmail.com"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Shay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shay@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shay"], ["created_at", "2022-09-15 02:52:12.859348"], ["updated_at", "2022-09-15 02:52:12.859348"], ["admin", false], ["password_digest", "$2a$12$vEZszSgUEjrWsIHvj5HxrePwlR2PhMPXUv8mPGB3v7Svg5dkmnfwe"], ["email", "shay@gmail.com"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFlight Load (1.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.4ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 62]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.5ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 63]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (1.6ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFlight Create (0.4ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-08"], ["origin", "SYD"], ["destination", "ADE"], ["flight_number", "154"], ["created_at", "2022-09-15 02:52:12.877295"], ["updated_at", "2022-09-15 02:52:12.877295"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-09"], ["origin", "LAX"], ["destination", "SYD"], ["flight_number", "96"], ["created_at", "2022-09-15 02:52:12.878378"], ["updated_at", "2022-09-15 02:52:12.878378"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-10-11"], ["origin", "CBR"], ["destination", "MEL"], ["flight_number", "65"], ["created_at", "2022-09-15 02:52:12.879056"], ["updated_at", "2022-09-15 02:52:12.879056"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (8.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFlight Create (4.6ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-07-10"], ["origin", "ADE"], ["destination", "MEL"], ["flight_number", "9"], ["created_at", "2022-09-15 02:52:12.888497"], ["updated_at", "2022-09-15 02:52:12.888497"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:120
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-12"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "15"], ["created_at", "2022-09-15 02:52:12.893927"], ["updated_at", "2022-09-15 02:52:12.893927"]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:120
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-09"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "222"], ["created_at", "2022-09-15 02:52:12.894604"], ["updated_at", "2022-09-15 02:52:12.894604"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2023-09-01"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "1"], ["created_at", "2022-09-15 02:52:12.895313"], ["updated_at", "2022-09-15 02:52:12.895313"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.3ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.900067"], ["airplane_id", 37], ["id", 64]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.901119"], ["airplane_id", 37], ["id", 65]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (1.0ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.901960"], ["airplane_id", 37], ["id", 69]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.2ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.903862"], ["airplane_id", 38], ["id", 66]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.904740"], ["airplane_id", 38], ["id", 67]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.905339"], ["airplane_id", 38], ["id", 70]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.905968"], ["airplane_id", 39], ["id", 68]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "flights"."flight_number" FROM "flights" WHERE "flights"."airplane_id" = $1[0m  [["airplane_id", 38]]
+  ↳ db/seeds.rb:150
+  [1m[36mReservation Load (4.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:154
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "12"], ["created_at", "2022-09-15 02:52:12.926266"], ["updated_at", "2022-09-15 02:52:12.926266"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "D"], ["column", "18"], ["created_at", "2022-09-15 02:52:12.927173"], ["updated_at", "2022-09-15 02:52:12.927173"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mReservation Create (0.4ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "B"], ["column", "7"], ["created_at", "2022-09-15 02:52:12.928350"], ["updated_at", "2022-09-15 02:52:12.928350"]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:174
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "11"], ["created_at", "2022-09-15 02:52:12.929770"], ["updated_at", "2022-09-15 02:52:12.929770"]]
+  ↳ db/seeds.rb:174
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:174
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:180
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "E"], ["column", "25"], ["created_at", "2022-09-15 02:52:12.930428"], ["updated_at", "2022-09-15 02:52:12.930428"]]
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:186
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.932032"], ["user_id", 57], ["id", 73]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.933019"], ["user_id", 57], ["id", 74]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.933790"], ["user_id", 58], ["id", 75]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.934465"], ["user_id", 59], ["id", 76]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.935495"], ["user_id", 60], ["id", 77]]
+  ↳ db/seeds.rb:195
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 57]]
+  ↳ db/seeds.rb:196
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:200
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.937098"], ["flight_id", 64], ["id", 73]]
+  ↳ db/seeds.rb:200
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:200
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:201
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.937800"], ["flight_id", 65], ["id", 74]]
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.938457"], ["flight_id", 66], ["id", 75]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.939078"], ["flight_id", 66], ["id", 76]]
+  ↳ db/seeds.rb:202
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:52:12.945991"], ["flight_id", 67], ["id", 77]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 66]]
+  ↳ db/seeds.rb:205
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (0.5ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 38]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 39]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Create (0.9ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "747"], ["row", "32"], ["column", "F"], ["created_at", "2022-09-15 02:53:17.704920"], ["updated_at", "2022-09-15 02:53:17.704920"], ["total_seats", 192]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "737"], ["row", "28"], ["column", "E"], ["created_at", "2022-09-15 02:53:17.707334"], ["updated_at", "2022-09-15 02:53:17.707334"], ["total_seats", 140]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "700"], ["row", "15"], ["column", "D"], ["created_at", "2022-09-15 02:53:17.708086"], ["updated_at", "2022-09-15 02:53:17.708086"], ["total_seats", 60]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 56]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Lei"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lei"], ["created_at", "2022-09-15 02:53:17.963547"], ["updated_at", "2022-09-15 02:53:17.963547"], ["admin", true], ["password_digest", "$2a$12$rbnW88l3SuotLCBIk36qKeHQ.lF81EJeKEO9KpkJmblekXIiWV6qi"], ["email", "lei@gmail.com"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Brendan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brendan@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brendan"], ["created_at", "2022-09-15 02:53:18.208771"], ["updated_at", "2022-09-15 02:53:18.208771"], ["admin", false], ["password_digest", "$2a$12$Wih.wURkfY4CG2Nyicc5Qu2iJBAq9pduvytcjAKH0zcNsCFzMmJWy"], ["email", "brendan@gmail.com"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Luke"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luke"], ["created_at", "2022-09-15 02:53:18.452986"], ["updated_at", "2022-09-15 02:53:18.452986"], ["admin", false], ["password_digest", "$2a$12$6ud1HLrkYcovTm0onV879.PnvCEjaj.ieDv2IEsfretV4SumJBtxW"], ["email", "luke@gmail.com"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kris@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kris"], ["created_at", "2022-09-15 02:53:18.698335"], ["updated_at", "2022-09-15 02:53:18.698335"], ["admin", false], ["password_digest", "$2a$12$N04ckbgs12jnN8N.bUt9aeYOad4ZmoXFTpHQWdVHOy4WS4GV7xpme"], ["email", "kris@gmail.com"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Shay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (6.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shay@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shay"], ["created_at", "2022-09-15 02:53:18.949604"], ["updated_at", "2022-09-15 02:53:18.949604"], ["admin", false], ["password_digest", "$2a$12$W5ZCMklRohF8I4fRe1dsBueVPwxljWC746pa3Mkv62aCKHw8ZZj0."], ["email", "shay@gmail.com"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFlight Load (11.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.3ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:90
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.4ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.5ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFlight Create (11.3ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-08"], ["origin", "SYD"], ["destination", "ADE"], ["flight_number", "154"], ["created_at", "2022-09-15 02:53:18.980372"], ["updated_at", "2022-09-15 02:53:18.980372"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-09"], ["origin", "LAX"], ["destination", "SYD"], ["flight_number", "96"], ["created_at", "2022-09-15 02:53:18.992809"], ["updated_at", "2022-09-15 02:53:18.992809"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-10-11"], ["origin", "CBR"], ["destination", "MEL"], ["flight_number", "65"], ["created_at", "2022-09-15 02:53:18.993707"], ["updated_at", "2022-09-15 02:53:18.993707"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-07-10"], ["origin", "ADE"], ["destination", "MEL"], ["flight_number", "9"], ["created_at", "2022-09-15 02:53:18.994473"], ["updated_at", "2022-09-15 02:53:18.994473"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:120
+  [1m[36mFlight Create (0.3ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-12"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "15"], ["created_at", "2022-09-15 02:53:18.995705"], ["updated_at", "2022-09-15 02:53:18.995705"]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:120
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-09"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "222"], ["created_at", "2022-09-15 02:53:18.996794"], ["updated_at", "2022-09-15 02:53:18.996794"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFlight Create (0.7ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2023-09-01"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "1"], ["created_at", "2022-09-15 02:53:18.997725"], ["updated_at", "2022-09-15 02:53:18.997725"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (1.0ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.003101"], ["airplane_id", 40], ["id", 71]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.005014"], ["airplane_id", 40], ["id", 72]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.7ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.005745"], ["airplane_id", 40], ["id", 76]]
+  ↳ db/seeds.rb:145
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.2ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.008470"], ["airplane_id", 41], ["id", 73]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.009298"], ["airplane_id", 41], ["id", 74]]
+  ↳ db/seeds.rb:146
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (1.2ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.014687"], ["airplane_id", 41], ["id", 77]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mFlight Update (0.2ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.016882"], ["airplane_id", 42], ["id", 75]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "flights"."flight_number" FROM "flights" WHERE "flights"."airplane_id" = $1[0m  [["airplane_id", 41]]
+  ↳ db/seeds.rb:150
+  [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mReservation Create (0.4ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "12"], ["created_at", "2022-09-15 02:53:19.038231"], ["updated_at", "2022-09-15 02:53:19.038231"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "D"], ["column", "18"], ["created_at", "2022-09-15 02:53:19.039620"], ["updated_at", "2022-09-15 02:53:19.039620"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mReservation Create (0.4ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "B"], ["column", "7"], ["created_at", "2022-09-15 02:53:19.041926"], ["updated_at", "2022-09-15 02:53:19.041926"]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:174
+  [1m[36mReservation Create (1.0ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "11"], ["created_at", "2022-09-15 02:53:19.042868"], ["updated_at", "2022-09-15 02:53:19.042868"]]
+  ↳ db/seeds.rb:174
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:174
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:180
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "E"], ["column", "25"], ["created_at", "2022-09-15 02:53:19.044849"], ["updated_at", "2022-09-15 02:53:19.044849"]]
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:186
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.046491"], ["user_id", 62], ["id", 79]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.047646"], ["user_id", 62], ["id", 80]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.048463"], ["user_id", 63], ["id", 81]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.049114"], ["user_id", 64], ["id", 82]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.049795"], ["user_id", 65], ["id", 83]]
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 62]]
+  ↳ db/seeds.rb:196
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:200
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.051201"], ["flight_id", 71], ["id", 79]]
+  ↳ db/seeds.rb:200
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:200
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:201
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.052053"], ["flight_id", 72], ["id", 80]]
+  ↳ db/seeds.rb:201
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.052732"], ["flight_id", 73], ["id", 81]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.053598"], ["flight_id", 73], ["id", 82]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mReservation Update (7.9ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:53:19.054614"], ["flight_id", 74], ["id", 83]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 73]]
+  ↳ db/seeds.rb:205
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (2.1ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.2ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.1ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 42]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (6.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Create (1.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "747"], ["row", "32"], ["column", "F"], ["created_at", "2022-09-15 02:57:47.408837"], ["updated_at", "2022-09-15 02:57:47.408837"], ["total_seats", 192]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.1ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "737"], ["row", "28"], ["column", "E"], ["created_at", "2022-09-15 02:57:47.410946"], ["updated_at", "2022-09-15 02:57:47.410946"], ["total_seats", 140]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAirplane Create (0.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "700"], ["row", "15"], ["column", "D"], ["created_at", "2022-09-15 02:57:47.412299"], ["updated_at", "2022-09-15 02:57:47.412299"], ["total_seats", 60]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 62]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 63]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Lei"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lei"], ["created_at", "2022-09-15 02:57:47.671416"], ["updated_at", "2022-09-15 02:57:47.671416"], ["admin", true], ["password_digest", "$2a$12$Ok8SkRHn4pfghIzqKBDcjORWCl.mD4KZTh2D9.wYhXvm/DhYM6YNO"], ["email", "lei@gmail.com"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Brendan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brendan@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brendan"], ["created_at", "2022-09-15 02:57:47.917231"], ["updated_at", "2022-09-15 02:57:47.917231"], ["admin", false], ["password_digest", "$2a$12$m40lobdx2dh1dblFax85A.y3PctKu7yVSH4a3i2obUONNXDj9EY4i"], ["email", "brendan@gmail.com"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Luke"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luke"], ["created_at", "2022-09-15 02:57:48.164572"], ["updated_at", "2022-09-15 02:57:48.164572"], ["admin", false], ["password_digest", "$2a$12$6P6Uajx6ETdzsCvUjK2Yierol92xTH6d2gNbI.0haeyBJmfm1dof6"], ["email", "luke@gmail.com"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kris@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kris"], ["created_at", "2022-09-15 02:57:48.411720"], ["updated_at", "2022-09-15 02:57:48.411720"], ["admin", false], ["password_digest", "$2a$12$RZqUgHdHEZ2ECW0UIjKUJuIkvO1N9E/AEZI1Fow1Ff.SUG7iv.Usa"], ["email", "kris@gmail.com"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Shay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shay@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shay"], ["created_at", "2022-09-15 02:57:48.655569"], ["updated_at", "2022-09-15 02:57:48.655569"], ["admin", false], ["password_digest", "$2a$12$hd/p12M1sXh14cmUenA3uev8YLZjz2P6mORpWpQ1WtBB4pgitLHSC"], ["email", "shay@gmail.com"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (2.7ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFlight Create (0.4ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-08"], ["origin", "SYD"], ["destination", "ADE"], ["flight_number", "154"], ["created_at", "2022-09-15 02:57:48.678792"], ["updated_at", "2022-09-15 02:57:48.678792"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-09"], ["origin", "LAX"], ["destination", "SYD"], ["flight_number", "96"], ["created_at", "2022-09-15 02:57:48.680265"], ["updated_at", "2022-09-15 02:57:48.680265"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-10-11"], ["origin", "CBR"], ["destination", "MEL"], ["flight_number", "65"], ["created_at", "2022-09-15 02:57:48.680990"], ["updated_at", "2022-09-15 02:57:48.680990"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-07-10"], ["origin", "ADE"], ["destination", "MEL"], ["flight_number", "9"], ["created_at", "2022-09-15 02:57:48.681701"], ["updated_at", "2022-09-15 02:57:48.681701"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:120
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-12"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "15"], ["created_at", "2022-09-15 02:57:48.682434"], ["updated_at", "2022-09-15 02:57:48.682434"]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:120
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-09"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "222"], ["created_at", "2022-09-15 02:57:48.683406"], ["updated_at", "2022-09-15 02:57:48.683406"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2023-09-01"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "1"], ["created_at", "2022-09-15 02:57:48.684014"], ["updated_at", "2022-09-15 02:57:48.684014"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.6ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.689884"], ["airplane_id", 43], ["id", 78]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.3ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.691427"], ["airplane_id", 43], ["id", 79]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.692257"], ["airplane_id", 43], ["id", 83]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.2ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.693144"], ["airplane_id", 44], ["id", 80]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.693854"], ["airplane_id", 44], ["id", 81]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.694440"], ["airplane_id", 44], ["id", 84]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mFlight Update (1.8ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.695051"], ["airplane_id", 45], ["id", 82]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "flights"."flight_number" FROM "flights" WHERE "flights"."airplane_id" = $1[0m  [["airplane_id", 44]]
+  ↳ db/seeds.rb:150
+  [1m[36mReservation Load (0.8ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mReservation Create (0.9ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "12"], ["created_at", "2022-09-15 02:57:48.724756"], ["updated_at", "2022-09-15 02:57:48.724756"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "D"], ["column", "18"], ["created_at", "2022-09-15 02:57:48.726356"], ["updated_at", "2022-09-15 02:57:48.726356"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mReservation Create (6.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "B"], ["column", "7"], ["created_at", "2022-09-15 02:57:48.730120"], ["updated_at", "2022-09-15 02:57:48.730120"]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:174
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "11"], ["created_at", "2022-09-15 02:57:48.737170"], ["updated_at", "2022-09-15 02:57:48.737170"]]
+  ↳ db/seeds.rb:174
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:174
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:180
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "E"], ["column", "25"], ["created_at", "2022-09-15 02:57:48.737951"], ["updated_at", "2022-09-15 02:57:48.737951"]]
+  ↳ db/seeds.rb:180
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:186
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.4ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.741324"], ["user_id", 67], ["id", 87]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.742681"], ["user_id", 67], ["id", 88]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.744172"], ["user_id", 68], ["id", 89]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.745240"], ["user_id", 69], ["id", 90]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.746439"], ["user_id", 70], ["id", 91]]
+  ↳ db/seeds.rb:195
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 67]]
+  ↳ db/seeds.rb:196
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:200
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.748421"], ["flight_id", 78], ["id", 87]]
+  ↳ db/seeds.rb:200
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:200
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:201
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.749237"], ["flight_id", 79], ["id", 88]]
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:201
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.749925"], ["flight_id", 80], ["id", 89]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.750637"], ["flight_id", 80], ["id", 90]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 02:57:48.751335"], ["flight_id", 81], ["id", 91]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 80]]
+  ↳ db/seeds.rb:205
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4808705032369488810)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4808705032369488810)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (0.7ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 43]]
+  ↳ db/seeds.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.2ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mAirplane Destroy (0.2ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Create (0.3ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "747"], ["row", "32"], ["column", "F"], ["created_at", "2022-09-15 03:18:55.826617"], ["updated_at", "2022-09-15 03:18:55.826617"], ["total_seats", 192]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "737"], ["row", "28"], ["column", "E"], ["created_at", "2022-09-15 03:18:55.827687"], ["updated_at", "2022-09-15 03:18:55.827687"], ["total_seats", 140]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mAirplane Create (0.2ms)[0m  [1m[32mINSERT INTO "airplanes" ("name", "row", "column", "created_at", "updated_at", "total_seats") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "700"], ["row", "15"], ["column", "D"], ["created_at", "2022-09-15 03:18:55.828424"], ["updated_at", "2022-09-15 03:18:55.828424"], ["total_seats", 60]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Lei"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lei"], ["created_at", "2022-09-15 03:18:56.083667"], ["updated_at", "2022-09-15 03:18:56.083667"], ["admin", true], ["password_digest", "$2a$12$nFddCwaKYvuMbsjtpwIvUen.L8fmRt6Jbmmrvs/PL5LdUtbGwgoNi"], ["email", "lei@gmail.com"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Brendan"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brendan@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brendan"], ["created_at", "2022-09-15 03:18:56.327459"], ["updated_at", "2022-09-15 03:18:56.327459"], ["admin", false], ["password_digest", "$2a$12$fPk3Iq7twKvpUgi4/qSAYuENq4XMkVo2ulrna1d9cOleeor3PbNmq"], ["email", "brendan@gmail.com"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Luke"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luke"], ["created_at", "2022-09-15 03:18:56.570529"], ["updated_at", "2022-09-15 03:18:56.570529"], ["admin", false], ["password_digest", "$2a$12$2SK5YLmfmxG98XbOC62EBufjkjVmSeWixMxdy7OujrBxT8TC.T00e"], ["email", "luke@gmail.com"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kris@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kris"], ["created_at", "2022-09-15 03:18:56.814308"], ["updated_at", "2022-09-15 03:18:56.814308"], ["admin", false], ["password_digest", "$2a$12$eQ86OTObTkUJFV8NXYkey.z0jymqt29CgI2xn5YndSJ5OH0fm8XV6"], ["email", "kris@gmail.com"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Shay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shay@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "admin", "password_digest", "email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shay"], ["created_at", "2022-09-15 03:18:57.058175"], ["updated_at", "2022-09-15 03:18:57.058175"], ["admin", false], ["password_digest", "$2a$12$7nX7bo9oce8idI8IqD.2VuwAPGd1EMMb8eoBJe7Fh/xuiOn7rUb7m"], ["email", "shay@gmail.com"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFlight Load (1.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.6ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFlight Create (0.4ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-08"], ["origin", "SYD"], ["destination", "ADE"], ["flight_number", "154"], ["created_at", "2022-09-15 03:18:57.075673"], ["updated_at", "2022-09-15 03:18:57.075673"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-08-09"], ["origin", "LAX"], ["destination", "SYD"], ["flight_number", "96"], ["created_at", "2022-09-15 03:18:57.076738"], ["updated_at", "2022-09-15 03:18:57.076738"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-10-11"], ["origin", "CBR"], ["destination", "MEL"], ["flight_number", "65"], ["created_at", "2022-09-15 03:18:57.077386"], ["updated_at", "2022-09-15 03:18:57.077386"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-07-10"], ["origin", "ADE"], ["destination", "MEL"], ["flight_number", "9"], ["created_at", "2022-09-15 03:18:57.078026"], ["updated_at", "2022-09-15 03:18:57.078026"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:120
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-12"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "15"], ["created_at", "2022-09-15 03:18:57.078763"], ["updated_at", "2022-09-15 03:18:57.078763"]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:120
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2022-09-09"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "222"], ["created_at", "2022-09-15 03:18:57.079503"], ["updated_at", "2022-09-15 03:18:57.079503"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFlight Create (0.1ms)[0m  [1m[32mINSERT INTO "flights" ("date", "origin", "destination", "flight_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["date", "2023-09-01"], ["origin", "SYD"], ["destination", "MEL"], ["flight_number", "1"], ["created_at", "2022-09-15 03:18:57.080670"], ["updated_at", "2022-09-15 03:18:57.080670"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:141
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.3ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.084670"], ["airplane_id", 46], ["id", 85]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.085678"], ["airplane_id", 46], ["id", 86]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.086298"], ["airplane_id", 46], ["id", 90]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.086917"], ["airplane_id", 47], ["id", 87]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.087484"], ["airplane_id", 47], ["id", 88]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFlight Update (0.1ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.088034"], ["airplane_id", 47], ["id", 91]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mFlight Update (0.4ms)[0m  [1m[33mUPDATE "flights" SET "updated_at" = $1, "airplane_id" = $2 WHERE "flights"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.090131"], ["airplane_id", 48], ["id", 89]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "flights"."flight_number" FROM "flights" WHERE "flights"."airplane_id" = $1[0m  [["airplane_id", 47]]
+  ↳ db/seeds.rb:150
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 92]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 93]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 94]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 95]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 96]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 97]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:154
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 88]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:154
+  [1m[36mReservation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 91]]
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:154
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "12"], ["created_at", "2022-09-15 03:18:57.107180"], ["updated_at", "2022-09-15 03:18:57.107180"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "D"], ["column", "18"], ["created_at", "2022-09-15 03:18:57.108048"], ["updated_at", "2022-09-15 03:18:57.108048"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "B"], ["column", "7"], ["created_at", "2022-09-15 03:18:57.108685"], ["updated_at", "2022-09-15 03:18:57.108685"]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:174
+  [1m[36mReservation Create (0.1ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "A"], ["column", "11"], ["created_at", "2022-09-15 03:18:57.109305"], ["updated_at", "2022-09-15 03:18:57.109305"]]
+  ↳ db/seeds.rb:174
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:174
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:180
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["row", "E"], ["column", "25"], ["created_at", "2022-09-15 03:18:57.109906"], ["updated_at", "2022-09-15 03:18:57.109906"]]
+  ↳ db/seeds.rb:180
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:180
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:186
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.111275"], ["user_id", 72], ["id", 98]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:192
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.112008"], ["user_id", 72], ["id", 99]]
+  ↳ db/seeds.rb:192
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:192
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:193
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.113090"], ["user_id", 73], ["id", 100]]
+  ↳ db/seeds.rb:193
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:193
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:194
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.113812"], ["user_id", 74], ["id", 101]]
+  ↳ db/seeds.rb:194
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:194
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mReservation Update (1.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "user_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.114483"], ["user_id", 75], ["id", 102]]
+  ↳ db/seeds.rb:195
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."user_id" = $1[0m  [["user_id", 72]]
+  ↳ db/seeds.rb:196
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:200
+  [1m[36mReservation Update (0.4ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.116898"], ["flight_id", 85], ["id", 98]]
+  ↳ db/seeds.rb:200
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:200
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:201
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.118114"], ["flight_id", 86], ["id", 99]]
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:201
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.118786"], ["flight_id", 87], ["id", 100]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:202
+  [1m[36mReservation Update (0.1ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.119457"], ["flight_id", 87], ["id", 101]]
+  ↳ db/seeds.rb:202
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:202
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:203
+  [1m[36mReservation Update (0.2ms)[0m  [1m[33mUPDATE "reservations" SET "updated_at" = $1, "flight_id" = $2 WHERE "reservations"."id" = $3[0m  [["updated_at", "2022-09-15 03:18:57.120266"], ["flight_id", 88], ["id", 102]]
+  ↳ db/seeds.rb:203
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:203
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 87]]
+  ↳ db/seeds.rb:205
