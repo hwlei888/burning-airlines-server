@@ -41,11 +41,7 @@ class ReservationsController < ApplicationController
   end
 
   def show
-    @reservation = Reservation.last
-    respond_to do |format|
-      format.html #shows page as html
-      format.json {render json: @reservation, include: [:users, :airplane]} 
-    end
+    @reservation = Reservation.find params[:id]
   end
 
   def edit
