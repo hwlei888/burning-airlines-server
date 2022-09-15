@@ -21,7 +21,7 @@ class AirplanesController < ApplicationController
   end
 
   def show
-    @airplane = Airplane.find params [:id]
+    @airplane = Airplane.find params[:id]
   end
 
   def edit

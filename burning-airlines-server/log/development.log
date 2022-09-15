@@ -46194,3 +46194,1796 @@ Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "reservations"."row" FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 87]]
   ↳ db/seeds.rb:205
 >>>>>>> dfea1d0e5c83ccec02e46ca13a20994352bf81dd
+Started GET "/" for 127.0.0.1 at 2022-09-15 14:38:29 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/newtrick/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by DashboardController#app as HTML
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (123.3ms)
+Completed 200 OK in 152ms (Views: 149.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-09-15 14:38:47 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-09-15 14:38:48 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 38ms (Views: 21.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 14:38:50 +1000
+Processing by DashboardController#app as HTML
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 14:38:51 +1000
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 44ms (Views: 34.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:38:52 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 14:39:17 +1000
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:39:37 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:42:43 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/routes" for 127.0.0.1 at 2022-09-15 14:43:36 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/rails/routes"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:44:13 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  Rendered airplanes/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/newtrick/projects/burning-airlines/burning-airlines-server/burning-airlines-server/app/views/airplanes/index.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+...e:#{ plane.name}" airplane_path );@output_buffer.safe_append...
+...                  ^~~~~~~~~~~~~
+):
+  
+app/views/airplanes/index.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:44:29 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  Rendered airplanes/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/newtrick/projects/burning-airlines/burning-airlines-server/burning-airlines-server/app/views/airplanes/index.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+...e:#{ plane.name}" airplane_path );@output_buffer.safe_append...
+...                  ^~~~~~~~~~~~~
+):
+  
+app/views/airplanes/index.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:44:34 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  Rendered airplanes/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/newtrick/projects/burning-airlines/burning-airlines-server/burning-airlines-server/app/views/airplanes/index.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+...e:#{ plane.name}" airplane_path );@output_buffer.safe_append...
+...                  ^~~~~~~~~~~~~
+):
+  
+app/views/airplanes/index.html.erb:15: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:44:44 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"airplanes"}, missing required keys: [:id]):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path %></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_19580'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_19580'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:45:04 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path plane.id %></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_20100'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_20100'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:47:07 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"airplanes"}, missing required keys: [:id]):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path + "\/\##{plane.id}" %></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_20620'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_20620'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:47:49 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path plane.id%></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_21140'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_21140'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:49:58 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path(plane.id)%></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_21660'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_21660'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:50:10 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path (plane.id)%></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_22180'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_22180'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:50:15 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplanes_path (plane.id)%></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_22700'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_22700'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:50:26 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"airplanes"}, missing required keys: [:id]):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path%></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_23220'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_23220'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:50:52 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"airplanes"}, missing required keys: [:id]):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path %></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_23740'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_23740'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:50:57 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:51:00 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:52:34 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path(plane.id) %></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_24420'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_24420'
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:53:50 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    12: <% @airplanes.each do |plane|  %> 
+    13: <div class = "beCenter">
+    14: 
+    15:     <%= link_to plane.name airplane_path(plane.id) %></p>
+    16:     <ul>
+    17:         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
+    18:         <li>Total number of seats: <%= plane.total_seats %></li>
+  
+app/views/airplanes/index.html.erb:15:in `block in _app_views_airplanes_index_html_erb___763178614720631942_30200'
+app/views/airplanes/index.html.erb:12:in `_app_views_airplanes_index_html_erb___763178614720631942_30200'
+Started PUT "/__web_console/repl_sessions/ba6885f4b3d3fb6a80c0c370eaedadb9" for 127.0.0.1 at 2022-09-15 14:54:04 +1000
+Started PUT "/__web_console/repl_sessions/ba6885f4b3d3fb6a80c0c370eaedadb9" for 127.0.0.1 at 2022-09-15 14:54:05 +1000
+Started PUT "/__web_console/repl_sessions/ba6885f4b3d3fb6a80c0c370eaedadb9" for 127.0.0.1 at 2022-09-15 14:54:08 +1000
+Started PUT "/__web_console/repl_sessions/ba6885f4b3d3fb6a80c0c370eaedadb9" for 127.0.0.1 at 2022-09-15 14:54:08 +1000
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 14:54:40 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 14:54:42 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 14:56:06 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: 
+    2: <div class="beCenter">
+    3:     <h2>Viewing Details for <%=  @plane.name %></h2>
+    4: </div>
+  
+app/views/airplanes/show.html.erb:3:in `_app_views_airplanes_show_html_erb__1024900988907790645_30880'
+Started PUT "/__web_console/repl_sessions/811a200c733f3e8ad770f9c575c482fd" for 127.0.0.1 at 2022-09-15 14:57:08 +1000
+Started PUT "/__web_console/repl_sessions/811a200c733f3e8ad770f9c575c482fd" for 127.0.0.1 at 2022-09-15 14:57:11 +1000
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 14:58:17 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 14:59:08 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 14:59:14 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 14:59:19 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:00:37 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes/98" for 127.0.0.1 at 2022-09-15 15:00:41 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:00:43 +1000
+Processing by DashboardController#app as HTML
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:00:45 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes/97" for 127.0.0.1 at 2022-09-15 15:02:15 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:02:19 +1000
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 31ms (Views: 25.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:02:22 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:02:27 +1000
+Processing by DashboardController#app as HTML
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered dashboard/app.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:02:29 +1000
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:02:30 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-09-15 15:02:36 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-09-15 15:02:45 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NapRLouEu8EIh9Fn6l/4iYK5PIeO522SuVV3FLRZOTaw/ZpjPBlCdTk0fgmQCO1c6Ktswstfd7+HUCRuumCbbQ==", "email"=>"lei@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lei@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 209ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:02:45 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.7ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2022-09-15 15:02:52 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  Rendered reservations/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 44ms (Views: 37.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:02:58 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes/new" for 127.0.0.1 at 2022-09-15 15:03:00 +1000
+Processing by AirplanesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/new.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.5ms)
+  Rendered airplanes/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/airplanes/new" for 127.0.0.1 at 2022-09-15 15:04:00 +1000
+Processing by AirplanesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/new.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (5.5ms)
+  Rendered airplanes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes/new" for 127.0.0.1 at 2022-09-15 15:04:08 +1000
+Processing by AirplanesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/new.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.4ms)
+  Rendered airplanes/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/airplanes/new" for 127.0.0.1 at 2022-09-15 15:10:05 +1000
+Processing by AirplanesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/new.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (2.3ms)
+  Rendered airplanes/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:11:25 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.5ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:11:29 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:11:31 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.6ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:12:00 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.5ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:12:05 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.7ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:12:18 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.8ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:12:24 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.9ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:12:55 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (2.3ms)
+  Rendered dashboard/app.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:13:07 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.8ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:13:09 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (11.0ms)
+  Rendered dashboard/app.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:13:10 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:13:11 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2022-09-15 15:13:12 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  Rendered reservations/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:13:15 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.7ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:13:31 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.9ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:13:42 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.7ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:13:46 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (4.0ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:14:44 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (4.0ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:15:05 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (4.4ms)
+  Rendered dashboard/app.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:15:20 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (2.2ms)
+  Rendered dashboard/app.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:15:51 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (4.1ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:15:53 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.9ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:16:01 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.3ms)
+  Rendered dashboard/app.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:16:10 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.5ms)
+  Rendered dashboard/app.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:16:11 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.7ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:17:20 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (2.2ms)
+  Rendered dashboard/app.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:17:36 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (5.0ms)
+  Rendered dashboard/app.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:17:48 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (4.6ms)
+  Rendered dashboard/app.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:18:20 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.9ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:18:25 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.4ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:18:30 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.4ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2022-09-15 15:18:33 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  Rendered reservations/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:18:39 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.7ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:18:41 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:18:42 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:18:52 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/airplanes/96" for 127.0.0.1 at 2022-09-15 15:18:55 +1000
+Processing by AirplanesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/airplanes_controller.rb:24
+  Rendering airplanes/show.html.erb within layouts/application
+  Rendered airplanes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/flights" for 127.0.0.1 at 2022-09-15 15:19:48 +1000
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/flights/index.html.erb:22
+  Rendered flights/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:19:48 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (4.1ms)
+  Rendered dashboard/app.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 15:21:34 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/find/Kris.json" for 127.0.0.1 at 2022-09-15 15:21:45 +1000
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 15:21:45 +1000
+Processing by UsersController#find as JSON
+  Parameters: {"name"=>"Kris"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2022-09-15 15:22:32 +1000
+Started GET "/reservations/lastreservation.json" for 127.0.0.1 at 2022-09-15 15:22:32 +1000
+Processing by ReservationsController#create as HTML
+  Parameters: {"row"=>"15", "column"=>"B", "user_id"=>144, "flight_id"=>143, "reservation"=>{"row"=>"15", "column"=>"B", "user_id"=>144, "flight_id"=>143}}
+Processing by ReservationsController#show as JSON
+  Parameters: {"id"=>"lastreservation"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reservations_controller.rb:18
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" ("row", "column", "created_at", "updated_at", "user_id", "flight_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["row", "15"], ["column", "B"], ["created_at", "2022-09-15 05:22:32.393869"], ["updated_at", "2022-09-15 05:22:32.393869"], ["user_id", 144], ["flight_id", 143]]
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" ORDER BY "reservations"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:18
+  ↳ app/controllers/reservations_controller.rb:45
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reservations_controller.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:48
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:48
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+  Rendering reservations/create.html.erb within layouts/application
+  Rendered reservations/create.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/reservations/lastreservation.json" for 127.0.0.1 at 2022-09-15 15:22:35 +1000
+Processing by ReservationsController#show as JSON
+  Parameters: {"id"=>"lastreservation"}
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" ORDER BY "reservations"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:45
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:48
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/controllers/reservations_controller.rb:48
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 15:22:42 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/find/Kris.json" for 127.0.0.1 at 2022-09-15 15:22:45 +1000
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 15:22:45 +1000
+Processing by UsersController#find as JSON
+  Parameters: {"name"=>"Kris"}
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26
+  ↳ app/controllers/flights_controller.rb:30
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2022-09-15 15:23:20 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  Rendered reservations/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2022-09-15 15:23:23 +1000
+Processing by ReservationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/_form.html.erb (2.7ms)
+  Rendered reservations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/airplanes" for 127.0.0.1 at 2022-09-15 15:23:32 +1000
+Processing by AirplanesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (0.3ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:12
+  Rendered airplanes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/airplanes/new" for 127.0.0.1 at 2022-09-15 15:23:33 +1000
+Processing by AirplanesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering airplanes/new.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (3.5ms)
+  Rendered airplanes/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2022-09-15 15:23:37 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mAirplane Load (0.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:18
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:21
+  [1m[36mCACHE Airplane Load (0.0ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/views/reservations/index.html.erb:25
+  Rendered reservations/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:23:40 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.6ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-15 15:23:44 +1000
+Processing by DashboardController#app as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering dashboard/app.html.erb within layouts/application
+  Rendered airplanes/_form.html.erb (1.8ms)
+  Rendered dashboard/app.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/find/Kris.json" for 127.0.0.1 at 2022-09-15 15:27:27 +1000
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 15:27:27 +1000
+Processing by UsersController#find as JSON
+  Parameters: {"name"=>"Kris"}
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:30
+  ↳ app/controllers/users_controller.rb:26
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mReservation Load (0.1ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 15:28:48 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 15:28:55 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights.json" for 127.0.0.1 at 2022-09-15 15:29:05 +1000
+Processing by FlightsController#index as JSON
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:22
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/find/Kris.json" for 127.0.0.1 at 2022-09-15 15:29:07 +1000
+Started GET "/flights/15.json" for 127.0.0.1 at 2022-09-15 15:29:07 +1000
+Processing by UsersController#find as JSON
+  Parameters: {"name"=>"Kris"}
+Processing by FlightsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Kris"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."flight_number" = $1 LIMIT $2[0m  [["flight_number", "15"], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+  ↳ app/controllers/flights_controller.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "reservations" ON "users"."id" = "reservations"."user_id" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mAirplane Load (0.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:33
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 143]]
+  ↳ app/controllers/flights_controller.rb:33
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.8ms)
+
+

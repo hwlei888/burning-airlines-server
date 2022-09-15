@@ -12,7 +12,7 @@
 <% @airplanes.each do |plane|  %> 
 <div class = "beCenter">
 
-    <p>Name:<%= plane.name %></p>
+    <%= link_to plane.name, airplane_path(plane.id) %></p>
     <ul>
         <li>Total row /column:<%= plane.row %> <%= plane.column %></li>
         <li>Total number of seats: <%= plane.total_seats %></li>
