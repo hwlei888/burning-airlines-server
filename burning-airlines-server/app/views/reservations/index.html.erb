@@ -9,25 +9,24 @@
 <% end %>
 </div>
 
+
 <% @reservations.each do |r|  %> 
 <div class = "beCenter">
-    <p><%= r.row %> <%= r.column %>
-</div>
+<div class = "reservationBox">
+<ul>
+    <li><%= r.row %> <%= r.column %></li>
 
-<div class = "beCenter">
-    <p>Booked by <%= r.user.name %></p>
-</div>
-<div class = "beCenter">
-    <p>For flight <%= r.flight.origin%> >> <%= r.flight.destination %></p>
-    <p>on <%=r.flight.date %></p>
-</div>
-<div class = "beCenter">
-    <p>flying by <%= r.flight.airplane.name%></p>
-</div>
+    <li>Booked by <%= r.user.name %></li>
 
-<hr>
+    <li><%= r.flight.origin%> >> <%= r.flight.destination %> on <%=r.flight.date %></li>
 
+    <li>flying by <%= r.flight.airplane.name%></li>
+</ul>
+
+</div>
+</div>
 
 <% end %>
+
 
 <%= @allDate %>

@@ -20,23 +20,18 @@
 
         
         <%= f.date_field :date %>
-        <br>
+        <br><br>
         
         <%= f.text_field :origin, placeholder:'Enter Origin' %>
-        <br>
+        <br><br>
         
         <%= f.text_field :destination, placeholder:'Enter Destination' %>
-        <br>
+        <br><br>
         
         <%= f.label :flight_number, 'FlightNumber'  %>
         <br>
         <%= f.number_field :flight_number %>
-        <br>
-        
-       
-        <p>User</p>
-        <p>Flight</p>
-        <p>Plane</p>
+        <br><br>
 
         <%= f.submit class:"button"%>
     <% end %>

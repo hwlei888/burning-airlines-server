@@ -12,3 +12,18 @@ div {
     /* border: solid 1px red; */
 }
 
+.reservationBox{
+    border: 2px dotted black;
+    margin: 15px;
+    width: 30vw;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+li{
+list-style: none;
+text-align: left;
+}
+
+
+

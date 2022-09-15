@@ -20,7 +20,7 @@ class ReservationsController < ApplicationController
   end
 
   def index
-    @reservations = Reservation.all
+    @reservations = Reservation.all.reverse
 
     # @reservations.each do |r| 
     #   {
