@@ -138,13 +138,41 @@ f7 = Flight.create!(
     flight_number: "1"
 )
 
+f8 = Flight.create!(
+    date: "2023-08-08",
+    origin: 'MEL',
+    destination: 'SYD',
+    flight_number: "88"
+)
+
+f9 = Flight.create!(
+    date: "2022-11-22",
+    origin: 'MEL',
+    destination: 'SYD',
+    flight_number: "126"
+)
+
+f10 = Flight.create!(
+    date: "2023-09-05",
+    origin: 'CBR',
+    destination: 'MEL',
+    flight_number: "168"
+)
+
+f11 = Flight.create!(
+    date: "2023-04-15",
+    origin: 'ADE',
+    destination: 'MEL',
+    flight_number: "54"
+)
+
 puts("I have created #{Flight.count} flights.")
 
 ####FLIGHTS ASSOCIATIONS  AIRPLANES --< > FLIGHTS######
 
-a1.flights << f1 << f2 << f6 
-a2.flights << f3 << f4 << f7
-a3.flights << f5
+a1.flights << f1 << f2 << f6 << f11
+a2.flights << f3 << f4 << f7 << f9
+a3.flights << f5 << f8 << f10
 
 puts ('I have connected FLIGHTS with AIRPLANES.')
 puts"The AIRPLANE '#{a2.name}' contains the flights: #{a2.flights.pluck(:flight_number).join(', ')}."
