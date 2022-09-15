@@ -30,7 +30,7 @@ class FlightsController < ApplicationController
     @flight = Flight.find_by flight_number: params[:id]
     respond_to do |format|
       format.html #shows page as html
-      format.json {render json: @flight, include: [:users, :airplane]} 
+      format.json {render json: @flight, include: [:users, :airplane, :reservations]} 
     end
     
   end
@@ -44,7 +44,7 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.require(:flight).permit(:date, :origin, :destination, :flight_number, :airplane_id)
+    params.require(:flight).permit(:date, :origin, :destination, :flight_number, :airplane_id )
 
   end 
 
